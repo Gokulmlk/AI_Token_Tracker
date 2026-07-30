@@ -1,5 +1,6 @@
-🤖 AI Token Tracker
-A lightweight, privacy-first browser extension that estimates your daily token usage across major AI chat platforms. Built for users on free tiers who want to stay within their limits — no API keys, no backend, 100% offline.
+## 🤖 AI Token Tracker
+### A lightweight, privacy-first browser extension that estimates your daily token usage across major AI chat platforms. Built for users on free tiers who want to stay within their limits — no API keys, no backend, 100% offline.
+
 ✨ Features
 🔍 Auto-detects which AI tool you're using on the current tab
 📊 Estimates tokens in your prompts and AI responses in real time
