@@ -12,45 +12,53 @@ A lightweight, privacy-first browser extension that estimates your daily token u
 - 🛠️ Supported Platforms
 
 ```
-Table
-Platform	Free Tier Default	Status
-ChatGPT (OpenAI)	~40,000 tokens/day	✅ Supported
-Claude (Anthropic)	~30,000 tokens/day	✅ Supported
-Gemini (Google)	~60,000 tokens/day	✅ Supported
-Perplexity	~5,000 tokens/day	✅ Supported
-Copilot (Microsoft)	~4,000 tokens/day	✅ Supported
-DeepSeek	~50,000 tokens/day	✅ Supported
-Grok (xAI)	~25,000 tokens/day	✅ Supported
+| Platform                | Free Tier Default  | Status      |
+| ----------------------- | ------------------ | ----------- |
+| **ChatGPT** (OpenAI)    | ~40,000 tokens/day | ✅ Supported |
+| **Claude** (Anthropic)  | ~30,000 tokens/day | ✅ Supported |
+| **Gemini** (Google)     | ~60,000 tokens/day | ✅ Supported |
+| **Perplexity**          | ~5,000 tokens/day  | ✅ Supported |
+| **Copilot** (Microsoft) | ~4,000 tokens/day  | ✅ Supported |
+| **DeepSeek**            | ~50,000 tokens/day | ✅ Supported |
+| **Grok** (xAI)          | ~25,000 tokens/day | ✅ Supported |
+
 ```
-⚠️ Note: Default limits are rough estimates. Actual free-tier caps vary by account type, region, and provider policy. Always verify and adjust limits to match your account.
-📦 Installation
-Chrome / Edge / Brave / Opera
-Download or clone this repository.
-Open your browser and navigate to the extensions page:
-Chrome: chrome://extensions
-Edge: edge://extensions
-Brave: brave://extensions
-Opera: opera://extensions
-Enable Developer mode using the toggle in the top-right corner.
-Click Load unpacked and select the extension folder.
-Pin the extension to your toolbar for quick access.
-Firefox
-Firefox requires Manifest V2. Use the manifest-firefox.json file (rename it to manifest.json before loading):
-Download or clone this repository.
-Rename manifest-firefox.json to manifest.json.
-Open Firefox and go to about:debugging.
-Click This Firefox → Load Temporary Add-on...
-Select the manifest.json file inside the extension folder.
+#### ⚠️ Note: Default limits are rough estimates. Actual free-tier caps vary by account type, region, and provider policy. Always verify and adjust limits to match your account.
+
+## 📦 Installation
+
+### Chrome / Edge / Brave / Opera
+1. Download or clone this repository.
+2. Open your browser and navigate to the extensions page:
+- Chrome: chrome://extensions
+- Edge: edge://extensions
+- Brave: brave://extensions
+- Opera: opera://extensions
+3. Enable Developer mode using the toggle in the top-right corner.
+4. Click Load unpacked and select the extension folder.
+5. Pin the extension to your toolbar for quick access.
+
+## Firefox
+### Firefox requires Manifest V2. Use the manifest-firefox.json file (rename it to manifest.json before loading):
+1. Download or clone this repository.
+2. Rename manifest-firefox.json to manifest.json.
+3. Open Firefox and go to about:debugging.
+4. Click This Firefox → Load Temporary Add-on...
+5. Select the manifest.json file inside the extension folder.
+```
 💡 For a permanent Firefox install, you'll need to package it as an .xpi or submit it to addons.mozilla.org.
-🚀 How to Use
-Open any supported AI platform (e.g., chatgpt.com, claude.ai).
-Chat normally. The extension automatically detects your messages and the AI's responses.
-Click the extension icon in your browser toolbar to see:
-Estimated tokens used today per platform
-Progress bar showing usage against your limit
-Color-coded warnings (green → yellow → red)
-Edit your limits by clicking "Edit Limits" in the popup if your account has different caps.
-📁 File Structure
+```
+### 🚀 How to Use
+1. Open any supported AI platform (e.g., chatgpt.com, claude.ai).
+2. Chat normally. The extension automatically detects your messages and the AI's responses.
+3. Click the extension icon in your browser toolbar to see:
+   - Estimated tokens used today per platform
+   - Progress bar showing usage against your limit
+   - Color-coded warnings (green → yellow → red)
+4. Edit your limits by clicking "Edit Limits" in the popup if your account has different caps.
+   
+## 📁 File Structure
+```
 plain
 ai-token-tracker/
 ├── manifest.json              # Chrome/Edge/Brave/Opera manifest (MV3)
@@ -64,7 +72,8 @@ ai-token-tracker/
     ├── icon16.png
     ├── icon48.png
     └── icon128.png
-🔬 How Token Estimation Works
+```
+## 🔬 How Token Estimation Works
 This extension does not use official tokenizers (like OpenAI's tiktoken) because they require large dictionary files and would hurt performance. Instead, it uses character-to-token ratios calibrated per platform:
 Table
 Platform	Approx. Chars per Token
