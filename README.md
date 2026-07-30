@@ -1,15 +1,17 @@
-## 🤖 AI Token Tracker
-### A lightweight, privacy-first browser extension that estimates your daily token usage across major AI chat platforms. Built for users on free tiers who want to stay within their limits — no API keys, no backend, 100% offline.
+# 🤖 AI Token Tracker
+A lightweight, privacy-first browser extension that estimates your daily token usage across major AI chat platforms. Built for users on free tiers who want to stay within their limits — no API keys, no backend, 100% offline.
 
-✨ Features
-🔍 Auto-detects which AI tool you're using on the current tab
-📊 Estimates tokens in your prompts and AI responses in real time
-📅 Tracks daily usage with visual progress bars per platform
-🚨 Warns you when you're approaching your free-tier limit (70%, 90%, 100%)
-🔒 Zero data collection — everything stays in your browser's local storage
-🌐 Cross-browser — works on Chrome, Edge, Brave, Opera, and Firefox
-⚙️ Customizable limits — edit daily caps directly in the popup
-🛠️ Supported Platforms
+### ✨ Features
+- 🔍 Auto-detects which AI tool you're using on the current tab
+- 📊 Estimates tokens in your prompts and AI responses in real time
+- 📅 Tracks daily usage with visual progress bars per platform
+- 🚨 Warns you when you're approaching your free-tier limit (70%, 90%, 100%)
+- 🔒 Zero data collection — everything stays in your browser's local storage
+- 🌐 Cross-browser — works on Chrome, Edge, Brave, Opera, and Firefox
+- ⚙️ Customizable limits — edit daily caps directly in the popup
+- 🛠️ Supported Platforms
+
+```
 Table
 Platform	Free Tier Default	Status
 ChatGPT (OpenAI)	~40,000 tokens/day	✅ Supported
@@ -19,6 +21,7 @@ Perplexity	~5,000 tokens/day	✅ Supported
 Copilot (Microsoft)	~4,000 tokens/day	✅ Supported
 DeepSeek	~50,000 tokens/day	✅ Supported
 Grok (xAI)	~25,000 tokens/day	✅ Supported
+```
 ⚠️ Note: Default limits are rough estimates. Actual free-tier caps vary by account type, region, and provider policy. Always verify and adjust limits to match your account.
 📦 Installation
 Chrome / Edge / Brave / Opera
