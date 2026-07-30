@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>🤖 AI Token Tracker</h1>
+    <span class="subtitle">Free Tier Monitor</span>
+  </div>
+  
+  <div class="reset-info">
+    Resets daily at midnight · <span id="current-date"></span>
+  </div>
+  
+  <div id="platforms-container">
+    <!-- Filled by JS -->
+  </div>
+  
+  <div class="footer">
+    <small>Token counts are estimates. Actual limits vary by account.</small>
+    <button id="settings-btn" class="secondary">Edit Limits</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
